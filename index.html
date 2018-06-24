@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="UTF-8">
+        <title>My Homepage</title>
+<link rel="stylesheet" href="css/comm.css">
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+
+// 제이쿼리 아래에서 천천히 올라오는 효과
+$(document).ready(function(e) {
+    
+    $(".multiply_chart_top, .multiply_chart_middle").hide();
+     // chpter 첫번째 컨텐츠만 보이게 설정
+    
+    $(window).bind("scroll", contents_scroll); // 윈도우 창 전체에 이벤트를 걸어준다
+    
+});
+// 천천히 보이게 하는 자바스크립트 입니다.
+    function contents_scroll(){
+
+     blog_top_s=$(window).scrollTop(); // 스크롤이 내려갈시에 주는 변수
+
+    if(blog_top_s>=2550){ // 윈도우 문서가 스크롤 포지션이 2550px 내려갔을시
+        $(".multiply_chart_top").fadeIn();
+        $(".multiply_chart_top").stop(true).animate({
+            top: '0',
+            opacity:'1',
+        },"slow")
+    }
+        blog_top_s=$(window).scrollTop(); // 스크롤이 내려갈시에 주는 변수
+
+    if(blog_top_s>=2900){ // 윈도우 문서가 스크롤 포지션이 2900px 내려갔을시
+        $(".multiply_chart_middle").fadeIn();
+        $(" .multiply_chart_middle").stop(true).animate({
+            top: '0',
+            opacity:'1',
+        },"slow")
+    }
+
+}
+
+</script>
+</head>
+<body>
+        <div class="wrap">
+                <div class="con_a">
+                        <ul class="menu">
+                                <li><a href="#">HOMEPAGEgggg</a></li>
+                                <li><a href="#">FEATURES</a></li>
+                                <li><a href="#">FAGES</a></li>
+                                <li><a href="#">BLOG</a></li>
+                        </ul>
+                       <div class="area_bg">
+                            <div class="area_title">
+                                <h1><b>HEAVY<br>LIGHT<br>PENDANT</b></h1>
+                                <p>THE LATES ADDITION FRAM THE BET<br>
+                                DESIGNERS YOU LOVE</p>
+                        </div>   
+                       </div>
+                        <ul class="subtitle">
+                                <li class="subtitle_g txt1"><h2>HELLO</h2><br>
+                                <p>Finch clearly presents the information about the site and gives visitors a choice of options without overcrowding them with unnecessary content.</p>
+                                </li>
+                                <li class="subtitle_g txt2"><h2>SEE THE WORK</h2><br>
+                                <p>Finch clearly presents the information about the site and gives visitors a choice of options without overcrowding them with unnecessary content.</p>
+                                </li>
+                                <li class="subtitle_g txt3"><h2>LET'S CHAT</h2><br>
+                                <p>Finch clearly presents the information about the site and gives visitors a choice of options without overcrowding them with unnecessary content.</p>
+                                </li>
+                        </ul>
+                </div>
+                <div class="con_b">
+                        <div class="container">
+                            <div class="top_line">
+                                <div class="top_inner_line"></div>
+                                <div class="top_text">
+                                <h3>WHO WE ARE</h3>
+                                <p>the table addrion fram the best designs your love</p>    
+                                </div>
+                                <div class="top_line_img"></div>
+                            </div>
+                                    <!-- con위에 공통적으로 들어가는 체크와 작대기 입니다. -->
+                            <div class="top_contnet">
+                            <div class="con_b_box">
+                                <div class="box_g">
+                                    <div class="text_g1">
+                                        <!-- 이미지와 텍스트 모두 수정합니다 -->
+                                    <h3>What We Are</h3>
+                                    <p>lorem rpsum is simply dummy text the printiong and type setting</p>
+                                    </div>
+                                    <div class="con_b_box_img"></div>
+                                    <!-- 가장 상단에 들어가는 f의 이미지 입니다. -->
+                                </div>
+                                <div class="box_g">
+                                    <div class="text_g2">
+                                        <!-- 이미지와 텍스트 모두 수정합니다 -->
+                                    <h3>What We Are</h3>
+                                    <p>lorem rpsum is simply dummy text the printiong and type setting</p>
+                                    </div>
+                                    <div class="con_b_box_img"></div>
+                                    <!-- 가장 상단에 들어가는 f의 이미지 입니다. -->
+                                </div>
+                                <div class="box_g">
+                                    <div class="text_g3">
+                                        <!-- 이미지와 텍스트 모두 수정합니다 -->
+                                    <h3>What We Are</h3>
+                                    <p>lorem rpsum is simply dummy text the printiong and type setting</p>
+                                    </div>
+                                   <div class="con_b_box_img"></div>
+                                    <!-- 가장 상단에 들어가는 f의 이미지 입니다. -->
+                                </div>
+                                </div>
+                                <!-- end top content -->
+                            </div>
+                                <!-- start top_line -->
+                                <div class="top_line">
+                                    <div class="top_inner_line"></div>
+                                    <div class="top_text">
+                                    <h3>WHO WE ARE</h3>
+                                    <p>the table addrion fram the best designs your love</p>    
+                                    </div>
+                                    <div class="top_line_img"></div>
+                                </div>
+                                <!-- end top_line -->
+                            <!-- start bottom content-->
+                            <div class="con_b_b_box">
+                                <div class="box_g_b b_box1">
+                                    <div class="text"><h2>WEB/MOBILE</h2></div>
+                                </div>
+                                <div class="arrow_g_b b_box"></div>
+                                <div class="box_g_b b_box2">
+                                    <div class="text"><h2>WEB/MOBILE</h2></div>
+                                </div>
+                                <div class="arrow_g_b b_box"></div>
+                                <div class="box_g_b b_box3">
+                                    <div class="text"><h2>WEB/MOBILE</h2></div>
+                                </div>
+                            </div>
+                            <!-- end bottom content -->
+                        </div>
+                        <!-- con_b 배경색상 수정을 위한 div입니다. -->
+                </div>
+                <!-- end con_b 입니다. -->
+                <div class="con_c">
+                                <!-- start top_line -->
+                                <div class="top_line_white">
+                                    <div class="top_inner_line_white"></div>
+                                    <div class="top_text_white">
+                                    <h3>WHO WE ARE</h3>
+                                    <p>the table addrion fram the best designs your love</p>    
+                                    </div>
+                                    <div class="top_line_white_img"></div>
+                                </div>
+                                <!-- end top_line -->
+                                <!-- start chart_top -->
+                                <div class="wrap_multiply_chart_top">
+                                <div class="multiply_chart_top">
+                                <div class="chart_ma">
+                                    <!-- icon 이미지 입니다 -->
+                                    <div class="icon_ma"></div>
+                                      <div class="single-chart">
+                                    <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                      <path class="circle-bg"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <path class="circle"
+                                        stroke-dasharray="60, 100"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <text x="18" y="20.35" class="percentage">60%</text>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <!-- end_ma -->
+                                <!-- start_mu -->
+                                    <div class="chart_mu">
+                                    <!-- icon 이미지 입니다 -->
+                                    <div class="icon_mu"></div>
+                                      <div class="single-chart">
+                                    <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                      <path class="circle-bg"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <path class="circle" 
+                                        stroke-dasharray="40, 100"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <text x="18" y="20.35" class="percentage">40%</text>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <!-- end_mu -->
+                                <!-- start_mu -->
+                                </div>
+                               <!-- end multiply-chart_top -->
+                               </div>
+                                <div class="wrap_multiply_chart_middle">
+                               <!-- start multiply-chart_middle  -->
+                                <div class="multiply_chart_middle">
+                                <div class="chart_ps">
+                                    <!-- icon 이미지 입니다 -->
+                                    <div class="icon_ps"></div>
+                                      <div class="single-chart">
+                                    <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                      <path class="circle-bg"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <path class="circle"
+                                        stroke-dasharray="75, 100"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <text x="18" y="20.35" class="percentage">75%</text>
+                                    </svg>
+                                  </div>
+                                </div>
+
+                                    <div class="chart_ai">
+                                    <!-- icon 이미지 입니다 -->
+                                    <div class="icon_ai"></div>
+                                      <div class="single-chart">
+                                    <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                      <path class="circle-bg"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <path class="circle" 
+                                        stroke-dasharray="55, 100"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <text x="18" y="20.35" class="percentage">55%</text>
+                                    </svg>
+                                  </div>
+                                </div>                              
+                                <div class="chart_pr">
+                                    <!-- icon 이미지 입니다 -->
+                                    <div class="icon_pr"></div>
+                                      <div class="single-chart">
+                                    <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                      <path class="circle-bg"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <path class="circle" 
+                                        stroke-dasharray="50, 100"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <text x="18" y="20.35" class="percentage">50%</text>
+                                    </svg>
+                                  </div>
+                                </div>                              
+                                <div class="chart_ae">
+                                    <!-- icon 이미지 입니다 -->
+                                    <div class="icon_ae"></div>
+                                      <div class="single-chart">
+                                    <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                      <path class="circle-bg"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <path class="circle" 
+                                        stroke-dasharray="60, 100"
+                                        d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                      />
+                                      <text x="18" y="20.35" class="percentage">60%</text>
+                                    </svg>
+                                  </div>
+                                </div>                              
+                                </div>
+                                <!-- end multiply-chart_meddle  -->
+                                </div>
+                                <div class="con_c_text">
+                                    <h2>rock group is easily adaptable to<br> any mobile device</h2>
+                                    <p>...cups of coffee was consumed by our team in 2014. and yes. this figure here is for no reason.<br>
+                                            and we are presenting you trx skills widget specially stylized for rock group</p>
+                                </div>
+                                </div>
+                <!-- end conC container  끝 입니다. -->
+                <div class="footer">
+                  <div class="footer_a">
+                  <h2>themerex is doing their best to grand each owner of rock group with maximum opportunities<br> to present their individuality, and establish the best contact with their audience</h2>
+                  <ul>
+                    <li class=" icon_f"></li>
+                    <li class=" icon_i"></li>
+                    <li class=" icon_t"></li>
+                    <li class=" icon_g"></li>
+                  </ul>
+                 <p>themerx. 2018 all rights recoved.</p>
+
+                  </div>
+
+                    <div class="right_box">
+
+                    <div class="adreess">
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>

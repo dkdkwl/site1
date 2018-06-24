@@ -1,0 +1,511 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/* reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans','맑은고딕','Malgun Gothic','돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/* global */
+#daumIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 스킵네비게이션 */
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-10;width:100%;height:100%} /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+ 
+.f_l {float:left}
+.f_r {float:right}
+.cl_b {width:0;height:0;font-size:0;line-height:0;clear:both}
+.show {display:block}
+.hide {display:none}
+.tbl {border-collapse:collapse;border-spacing:0} /* 테이블 초기화 */
+.clear_g {display:block;overflow:visible;width:auto;clear:both;*zoom:1}
+.clear_g:after {display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
+
+body {        
+}
+/* line */
+ /* 텍스트형 구분라인 */
+.txt_bar {font-size:12px;color:#b6b6b6}
+
+.wrap{
+    width: 1583px;
+        margin: 0 auto;
+}
+/*!!box-shadow값이 들어가지 않는다..*/
+.con_a{
+        width: 100%;
+        display: block;
+        background: #31425a;
+        box-shadow: 0px 5px 5px rgba(49, 66, 90, 0.4);
+        height: 1150px;
+        margin: 0 auto;
+}
+.menu{
+        padding: 44px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 1000px;
+        height: 24px;
+}
+.menu li {
+        display: inline-block;
+        padding: 0 60px;
+}
+.menu a{
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #235
+} 
+.menu a:hover{
+    background: rgba(255,255,255,0.1);
+}
+.area_bg{
+        margin: 0 auto;
+        width: 1000px;
+        background:  url(../imgs/re_img_card5.gif) 0px 0px no-repeat;
+        height: 600px;
+}
+.area_title {
+        padding: 130px 0 0 500px;
+        font-size: 45px;
+        width: 500px;
+}
+.area_title h1{
+        line-height: 100px;
+        letter-spacing: 4px;
+        color: #fff;
+        text-shadow: 9px 6px 0.5px #1c3860;
+}
+.area_title p{
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 5px 5px 0.5px #1c3860;
+}
+.subtitle{
+        margin:0 auto;
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        color: #fff
+}
+
+.subtitle li{
+        text-align: left;
+        width: 260px;
+        padding: 30px;
+        word-spacing: 5px;
+        /*text-align: justify;*/
+}
+.subtitle_g h2{
+    font-size: 30px;
+    color: #fff;
+}
+.subtitle_g p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.arrow{
+        background: #fff url(../imgs/arrow.png) 0 0 no-repeat;
+}
+.con_b{
+        margin-top: 20px;
+        height: 1400px;
+        background: white;
+
+}
+
+/*모두 공통된 컨테이너 크기랑 위치값 조절입니다.*/
+.container{
+        margin: 0 auto;
+        width: 1200px;
+}
+.con_btop_contnet {
+        margin-top: 40px;
+}
+.inner_b{
+        margin: 0 auto;
+        width: 800px;
+        background: #333;
+}
+.top_line{
+        text-align: center;
+        position: relative;
+        display: block;
+        margin:0 auto;
+        width: 1200px;
+        height: 300px;
+}
+.top_inner_line{
+        margin: 0 auto;
+        display: block;
+        width: 1000px;
+        height: 100px;
+        border-bottom: solid 2px #555;
+}
+.top_line_img{
+width: 65px;
+height: 65px;
+top: 68px;
+left: 50%;
+margin-left: -32px;
+position: absolute;
+/*padding: 30px;*/
+background: #fff url(../imgs/arrow.png) 50% 50% no-repeat;
+}
+.top_text{
+        margin-top: 60px;
+}
+.top_text h3{
+        font-size: 23px;
+}
+.top_text p{
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin-top: 10px;
+}
+.con_b_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /*background: red;*/
+        /*test를위한 색상입니다*/
+        margin: 0 auto 30px;
+        width: 930px;
+        height: 250px;
+}
+.con_b_box_img{
+position: absolute;
+top: -50px;
+left: 50%;
+margin-left: -50px;
+background: url(../imgs/f_icon_white.png) 0 0 no-repeat;
+width: 101px;
+height: 101px;
+}
+.box_g{
+        width: 270px;
+        height: 100%;
+        position: relative;
+        border: solid 2px rgba(0,0,0,0.1);
+}
+.con_b_box1{
+        /*background: yellow;*/
+}
+.con_b_box2{
+        /*background: blue;*/
+}
+.con_b_box3{
+        /*background: gray;*/
+}
+/*f이미지에 공통적으로 들어가는 태그입니다.*/
+.text_g1, .text_g2, .text_g3 {
+        height: 100%;
+        background-position: center;
+        background-size: 110%;
+        text-align: center;
+        margin-top: 0px;
+        bottom: 0;
+}
+.text_g1{
+        background-image:  url(../imgs/pr_icon.png);
+}
+.text_g2{
+        background-image:  url(../imgs/ai_icon.png);
+}
+.text_g3{
+        background-image:  url(../imgs/ps_icon.png);
+}
+
+/*conB:컨텐츠 상단에 들어가는 이미지 텍스트 입니다. */
+.text_g1 h3, .text_g2 h3, .text_g3 h3{
+        padding-top: 150px;
+        font-size: 20px;
+        color: #444;
+}
+.text_g1 p, .text_g2 p, .text_g3 p{
+        line-height: 1.8em;
+        font-size: 13px;
+        margin: 0 auto;
+        color: #444;       
+}
+/* (아래) f컨텐츠에 들어가는 공통된 이미지 여백 조절하는 태그입니다. */
+.top_box_g{
+        background:  url(../imgs/ae_icon.png) 0 0 no-repeat;
+        background-position: center;
+        background-size: 110%;
+
+        height: 200px;
+        /*background: #000;*/
+}
+.con_b_b_box{
+        text-align: center;
+        line-height: 550px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        /*background: blue;*/
+        /*test를위한 색상입니다*/
+        margin: 0 auto 30px;
+        width: 930px;
+        height: 250px;
+}
+.box_g_b{
+        flex: 0 0 25%;
+        height: 100%;
+        background: url(../imgs/1.jpg) 0 0 no-repeat;
+        background-position: center;
+}
+
+.arrow_g_b{
+        flex: 0 0 9%;
+        height: 65px;
+        background:  url(../imgs/arrow2.png) 5px 10px no-repeat;
+        background-size: 80%;
+}
+/*컨텐츠C : 컨텐츠 부문*/
+
+.top_line_white{
+        text-align: center;
+        position: relative;
+        display: block;
+        margin:0 auto;
+        width: 1200px;
+        height: 300px;
+}
+.top_inner_line_white{
+        margin: 0 auto;
+        display: block;
+        width: 1000px;
+        height: 100px;
+        border-bottom: solid 2px #ffffff;
+}
+.top_line_white_img{
+        width: 65px;
+        height: 65px;
+        top: 68px;
+        left: 50%;
+        margin-left: -32px;
+        position: absolute;
+        /*padding: 30px;*/
+        background: #31425a url(../imgs/arrow.png) 50% 50% no-repeat;
+}
+.top_text_white{
+        margin-top: 60px;
+}
+.top_text_white h3{
+        font-size: 23px;
+        color: #fff;
+}
+.top_text_white p{
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin-top: 10px;
+}
+/*컨텐츠C : 컨텐츠 사이즈 및 기본설정*/
+.con_c{
+margin-top: 10px;
+background: #31425a;
+height: 1600px;
+box-shadow: inset 0px 5px 10px rgba(0,0,0,0.4);
+}
+
+/*퍼센테이지 관련 설정입니다.*/
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.single-chart{
+    position: relative;
+  justify-content: space-around ;
+  width: 250px;
+  height: 250px;
+}
+
+.circular-chart {
+   box-shadow: 6px 6px 3px rgba(40, 53, 71, .7);
+   border-radius: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 250px;
+  height: 250px;
+}
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+.percentage {
+  text-shadow: 5px 5px 2px rgba(40, 53, 71, .7);
+  fill: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+height: 300px;
+width: 300px;
+}
+.chart_ma, .chart_mu, .chart_ps, .chart_ai, .chart_pr, .chart_ae{
+margin: 0 auto;
+}
+.icon_ma, .icon_mu, .icon_ps, .icon_ai, .icon_pr, .icon_ae{
+box-shadow: 5px 3px 3px rgba(40, 53, 71, .7);
+margin: 0 auto 30px;
+height: 121px;
+width: 121px;
+-webkit-background-size: contain;
+background-size: contain;
+background-position: 0 0;
+background-repeat: no-repeat;
+}
+.icon_ma{
+background-image: url(../imgs/maya_icon.png);
+}
+.icon_mu{
+background-image:  url(../imgs/mud_icon.png);
+}
+.icon_ps{
+background-image:  url(../imgs/ps_icon.png);
+}
+.icon_ai{
+background-image:  url(../imgs/ai_icon.png);
+}
+.icon_pr{
+background-image:  url(../imgs/pr_icon.png);
+}
+.icon_ae{
+background-image:  url(../imgs/ae_icon.png);
+}
+.wrap_multiply_chart_top{
+margin:0 auto;
+height: 550px;
+width: 1200px;
+position: relative;
+}
+.multiply_chart_top{
+position: absolute;
+    margin:0 auto;
+    opacity: 0;
+    top:200px;
+    display: flex;
+    width: 1200px;
+    height: 300px;
+}
+
+.wrap_multiply_chart_middle{
+margin:0 auto;
+height: 500px;
+width: 1200px;
+position: relative;
+}
+.multiply_chart_middle{
+position: absolute;
+    margin:0 auto;
+    opacity: 1;
+    top:200px;
+    display: flex;
+    width: 1200px;
+    height: 300px;
+}
+.con_c_text{
+    text-align: center;
+}
+.con_c_text h2{
+        font-size: 25px;
+        color: #fff;
+}
+.con_c_text p{
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        margin-top: 40px;
+
+}
+/*컨텐츠footer: 사이즈 및 기본설정*/
+.footer{
+        box-shadow:inset 0px 6px 5px rgba(49, 66, 90, 0.3);
+        height: 260px;
+        background: #CD4841FF;
+        background-repeat: no-repeat;
+        background-position: 600px 0;
+        background-size: 135px;
+}
+
+.icon_f, .icon_i, .icon_t, .icon_g{
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 60px;
+}
+.footer_a ul{
+    margin: 0 auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon_f{
+    background-image: url(../imgs/f_icon.png);
+}
+.icon_i{
+    background-image:  url(../imgs/i_icon.png);
+}
+.icon_t{
+   background-image:  url(../imgs/t_icon.png);
+}
+.icon_g{
+    background-image:  url(../imgs/g_icon.png);
+}
+/*h2태그에 왜 패딩을 줬는데 아래로 내려가는지.? 높이값을 같이 먹어서 그런건지 */
+.footer_a h2{
+    padding-top: 50px;
+    color: #fff;
+    line-height: 1.8em;
+    text-align: center;
+}
+.footer_a p{
+    margin-top: 10px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+}
